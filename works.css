@@ -50,7 +50,7 @@ li{
   padding:0px 0px;
   position: fixed;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 3;
 }
 
 
@@ -70,15 +70,16 @@ li{
 
 .container{
   width:auto;
-  height: 850px;
+  height: 400px;
   position: relative;
   margin:0;
 }
 
-.container video{ 
+.container img{ 
   width:100%;
-  height: 850px;
+  height: 400px;
   object-fit: cover;
+  object-position: 0 70%;
   padding: 0px 0px;
   margin: 0px 0px;
 }
@@ -105,17 +106,51 @@ li{
   position: relative;     
 }
 
-.textzone{
+.waku{
   color: rgb(34, 34, 34);
-  display: block;
   margin:  auto auto;
-  padding: 25px auto;
+  padding: 50px auto;
   width:80%;
   height: 90%;
   position: absolute;          /* 位置指定 */
    top: 50%;                    /* 親要素の半分下にずらす */
    left: 50%;                   /* 親要素の半分右にずらす */
    transform: translateY(-50%) translateX(-50%);    /* 要素自体の半分、上と左にずらす */
+}
+
+.gyou{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 30px 0;
+    padding-top: 30px;
+    transform: translateX(-0.5%);
+}
+
+.music{
+  position: relative;
+  background: rgb(132, 209, 253);
+  width: 24%;
+  margin-bottom: 1%;
+  z-index: 2;
+}
+.music::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.music img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  object-fit: cover;
 }
 
 .textzone h2{

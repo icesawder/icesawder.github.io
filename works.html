@@ -4,6 +4,38 @@
     <link rel="stylesheet" href="works.css">
     <meta charset="utf-8">
     <title>いすわぶのホームページ</title>
+
+    <script type='text/javascript'>
+      function scroll_effect() {
+        var element = document.getElementsByClassName('scroll-up');
+        if(!element) return;
+                            
+        var scrollY = window.pageYOffset;
+        var windowH = window.innerHeight;
+        var showTiming = 100; // 要素を表示するタイミング
+        for(var i = 0; i < element.length; i++) { 
+          var elemClientRect = element[i].getBoundingClientRect(); 
+          var elemY = scrollY + elemClientRect.top; 
+          if(scrollY > elemY - windowH + showTiming) {
+            element[i].classList.add('is-show');
+          }
+        }
+      }
+      window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <noscript>
+        <style>
+          .load-fade, .scroll-up {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+          }
+        </style>
+      </noscript>
+      
   </head>
 
   
@@ -23,15 +55,20 @@
   
   
     </div>
-
+    
 
     <div class="main">
-      
+      <audio id="m001" preload="auto"><source src="music/m001.mp3" type="audio/mp3"></audio>
+      <audio id="m002" preload="auto"><source src="music/m002.mp3" type="audio/mp3"></audio>
+      <audio id="m003" preload="auto"><source src="music/m003.mp3" type="audio/mp3"></audio>
+      <audio id="m004" preload="auto"><source src="music/m004.mp3" type="audio/mp3"></audio>
+
 
 
       <div class="container">
         <img src="images/002.png">
         <h1>WORKS</h1>
+        <div class="scrolldown2"><span>Scroll</span></div>
 
 
       </div>
@@ -39,22 +76,23 @@
       <div class="aboutzone">
         <div class="waku">
           <h2>MUSIC</h2>
+          <p>マウスをジャケットに重ねると、デモ音源が再生されます</p>
           
           <div class="gyou">
-            <div class="music"><img src="images/m001.png"> </div>
-            <div class="music"><img src="images/m002.png"> </div>
-            <div class="music"><img src="images/m003.png"> </div>
-            <div class="music"><img src="images/m004.png"> </div>
-            
-            <div class="music"><img src="images/m005.png"> </div>
-            <div class="music"><img src="images/m006.png"> </div>
-            <div class="music"><img src="images/m007.png"> </div>
-            <div class="music"><img src="images/m008.png"> </div>
+              <div class="music scroll-up m001"><img src="images/m001.png"> </div>
+              <div class="music scroll-up m002"><img src="images/m002.png"> </div>
+              <div class="music scroll-up m003"><img src="images/m003.png"> </div>
+              <div class="music scroll-up m004"><img src="images/m004.png"> </div>
 
-            <div class="music"><img src="images/m009.png"> </div>
-            <div class="music"><img src="images/m010.png"> </div>
-            <div class="music"><img src="images/m011.png"> </div>
-            <div class="music"><img src="images/m012.png"> </div>
+              <div class="music scroll-up"><img src="images/m005.png"> </div>
+              <div class="music scroll-up"><img src="images/m006.png"> </div>
+              <div class="music scroll-up"><img src="images/m007.png"> </div>
+             <div class="music scroll-up"><img src="images/m008.png"> </div>
+
+             <div class="music scroll-up"><img src="images/m009.png"> </div>
+             <div class="music scroll-up"><img src="images/m010.png"> </div>
+             <div class="music scroll-up"><img src="images/m011.png"> </div>
+              <div class="music scroll-up"><img src="images/m012.png"> </div>
           </div>
           
           
@@ -64,9 +102,58 @@
 
       
 
+    <script>
+      var audios = document.querySelectorAll( "audio" );
+      for(var i=0;i<audios.length;i++){
+       audios[ i ].addEventListener( "play", function(){
+      for(var j=0;j<audios.length;j++){
+        if( audios[ j ]!=this ){ audios[ j ].pause() }
+        }
+          }, false );
+        }
 
 
-    </div>
+        $(document).ready(function(){
+        //音を鳴らす
+        $('.m001').mouseover(function(){
+          document.getElementById("m001").currentTime = 0;
+          document.getElementById("m001").play();
+        });
+        $('.m001').mouseleave(function(){
+          document.getElementById("m001").currentTime = 0;
+          document.getElementById("m001").pause();
+        });
+
+        $('.m002').mouseover(function(){
+          document.getElementById("m002").currentTime = 0;
+          document.getElementById("m002").play();
+        });
+        $('.m002').mouseleave(function(){
+          document.getElementById("m002").currentTime = 0;
+          document.getElementById("m002").pause();
+        });
+
+        $('.m003').mouseover(function(){
+          document.getElementById("m003").currentTime = 0;
+          document.getElementById("m003").play();
+        });
+        $('.m003').mouseleave(function(){
+          document.getElementById("m003").currentTime = 0;
+          document.getElementById("m003").pause();
+        });
+
+        $('.m004').mouseover(function(){
+          document.getElementById("m004").currentTime = 0;
+          document.getElementById("m004").play();
+        });
+        $('.m004').mouseleave(function(){
+          document.getElementById("m004").currentTime = 0;
+          document.getElementById("m004").pause();
+        });
+      });
+    </script>
+    
+  </div>
 
     <div class="footer">
       

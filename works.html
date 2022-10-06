@@ -66,6 +66,12 @@
       <audio id="m003" preload="auto"><source src="music/m003.mp3" type="audio/mp3"></audio>
       <audio id="m004" preload="auto"><source src="music/m004.mp3" type="audio/mp3"></audio>
 
+      <div class="floating-banner">
+        <div class="banner">
+         
+        </div>
+      </div>
+
 
 
       <div class="container">
@@ -96,15 +102,21 @@
               <div class="music scroll-up trans-late"><img src="images/m010.png"> </div>
               <div class="music scroll-up trans-late"><img src="images/m011.png"> </div>
               <div class="music scroll-up trans-late"><img src="images/m012.png"> </div>
-          </div>
+         
+              <div class="music scroll-up trans-late"><img src="images/m013.png"> </div>
+              <div class="music scroll-up trans-late"><img src="images/m014.png"> </div>
+              <div class="music scroll-up trans-late"><img src="images/m015.png"> </div>
+              <div class="music scroll-up trans-late"><img src="images/m016.png"> </div>
+            </div>
           
+          <h2>DESIGN</h2>
           
         </div>
 
       </div>
 
-      
 
+      
     <script>
       var audios = document.querySelectorAll( "audio" );
       for(var i=0;i<audios.length;i++){
@@ -114,9 +126,17 @@
         }
           }, false );
         }
+        function mute(){
+           if(audios.muted){
+            audios.muted = false;
+           }else{
+            audios.muted = true;
+          }
+        }
+        const btn  = document.querySelector("#btn-play"); 
+ 
 
-
-        $(document).ready(function(){
+       $(document).ready(function(){
         //音を鳴らす
         $('.m001').mouseover(function(){
           document.getElementById("m001").currentTime = 0;
@@ -154,6 +174,8 @@
           document.getElementById("m004").pause();
         });
       });
+    
+
     </script>
     
   </div>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@300;500&display=swap');
+
+* {
+      margin: 0px;
+      padding: 0px;
+  }
+html {/* 小画面用 */
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: 'Poppins','Noto Sans JP', sans-serif;
+  background-size: cover;
+  font-size: 20px;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+
+a{
+  text-decoration: none;
+  padding: 0 4px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(255, 255, 255) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
+}
+a:visited{
+  color : #ffffff;
+}
+a:hover{
+  background-position: -100% 0;
+  color: rgb(132, 209, 253);
+}
+
+li{
+  list-style: none;
+  float:right;
+
+  padding:30px 15px;
+}
+
+
+.header-logo{
+  font-size:36px;
+  float:left;
+
+  padding: 18px 40px;
+}
+
+.main{
+  background-color: #cfcfcf;
+  height:auto;
+  padding:10px 10px 10px 10px;
+  margin:0;
+}
+
+.main img{
+    width: 30%;
+    height: 30%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    object-fit: cover;
+  }
+
+.container{
+  width:auto;
+  height: 850px;
+  position: relative;
+  margin:0;
+}
+
+.video{ 
+  width:100%;
+  height: 850px;
+  object-fit: cover;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+
+
+.h1{
+  position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+    font-size:9rem;
+    color: white;
+    white-space: nowrap
+}
+.h2{
+  font-size: 1.1rem;
+}
+
+.aboutzone{
+  display: block;
+  width:100%;
+  height: 1600px;
+  background-color: rgb(226, 226, 226);
+  position: relative;     
+}
+
+.textzone{
+  color: rgb(34, 34, 34);
+  display: block;
+  margin:  auto auto;
+  padding: 25px auto;
+  width:80%;
+  height: 90%;
+  position: absolute;          /* 位置指定 */
+   top: 50%;                    /* 親要素の半分下にずらす */
+   left: 50%;                   /* 親要素の半分右にずらす */
+   transform: translateY(-50%) translateX(-50%);    /* 要素自体の半分、上と左にずらす */
+}
+
+.textzone h2{
+  margin: 0 0 2.5rem;
+}
+
+.textzone h3{
+  font-weight: 200;
+  margin: 0 0 2.5rem;
+}
+
+.textzone h4{
+  font-weight: 200;
+  margin: 0 0 2.0rem;
+}
+
+
+
+@media only screen and (min-width:651px) {
+  html {
+    font-size: 71.4286%;
+  }
+}
+ 
+@media only screen and (min-width:961px) {
+  html {
+    font-size: 75.8929%;
+  }
+}

@@ -12,8 +12,8 @@ html {/* 小画面用 */
 body {
   font-family: 'Poppins','Noto Sans JP', sans-serif;
   background-size: cover;
-  font-size: 20px;
-  font-size: 1.8rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   margin: 0px;
 }
 
@@ -101,7 +101,7 @@ li{
 .aboutzone{
   display: block;
   width:100%;
-  height: 2000px;
+  height: 3000px;
   background-color: rgb(226, 226, 226);
   position: relative;     
 }
@@ -128,6 +128,11 @@ li{
     transform: translateX(-0.5%);
 }
 
+.waku img{
+  width: 32%;
+  padding-right: 1%;
+}
+
 .music{
   position: relative;
   background: rgb(132, 209, 253);
@@ -151,6 +156,23 @@ li{
   left: 0;
   margin: auto;
   object-fit: cover;
+}
+
+.hide-area{
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
 }
 
 .textzone h2{

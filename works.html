@@ -65,6 +65,10 @@
       <audio id="m002" preload="auto"><source src="music/m002.mp3" type="audio/mp3"></audio>
       <audio id="m003" preload="auto"><source src="music/m003.mp3" type="audio/mp3"></audio>
       <audio id="m004" preload="auto"><source src="music/m004.mp3" type="audio/mp3"></audio>
+      <audio id="m005" preload="auto"><source src="music/m005.mp3" type="audio/mp3"></audio>
+      <audio id="m006" preload="auto"><source src="music/m006.mp3" type="audio/mp3"></audio>
+      <audio id="m007" preload="auto"><source src="music/m007.mp3" type="audio/mp3"></audio>
+      <audio id="m008" preload="auto"><source src="music/m008.mp3" type="audio/mp3"></audio>
 
       <div class="floating-banner">
         <div class="banner">
@@ -85,32 +89,36 @@
       <div class="aboutzone">
         <div class="waku">
           <h2>MUSIC</h2>
+          <div class="setumei">
           <p>マウスをジャケットに重ねると、デモ音源が再生されます</p>
-          
+        </div>
           <div class="gyou">
-              <div class="music scroll-up m001 trans-late"><a href="001.html" class="iframe-open"><img src="images/m001.png"></a></div>
-              <div class="music scroll-up m002 trans-late"><img src="images/m002.png"> </div>
-              <div class="music scroll-up m003 trans-late"><img src="images/m003.png"> </div>
-              <div class="music scroll-up m004 trans-late"><img src="images/m004.png"> </div>
-
-              <div class="music scroll-up trans-late"><img src="images/m005.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m006.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m007.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m008.png"> </div>
-
-              <div class="music scroll-up trans-late"><img src="images/m009.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m010.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m011.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m012.png"> </div>
-         
-              <div class="music scroll-up trans-late"><img src="images/m013.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m014.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m015.png"> </div>
-              <div class="music scroll-up trans-late"><img src="images/m016.png"> </div>
-            </div>
+              <div class="music  m001 trans-late"><a href="001.html" class="iframe-open"><img src="images/m001.png" class="scroll-up"></a></div>
+              <div class="music  m002 trans-late"><a href="002.html" class="iframe-open"><img src="images/m002.png" class="scroll-up"></a></div>
+              <div class="music  m003 trans-late"><img src="images/m003.png" class="scroll-up"> </div>
+              <div class="music  m004 trans-late"><img src="images/m004.png" class="scroll-up"> </div>
           
-          <h2>MOVIE</h2>
-            <img src="images/001.gif"><img src="images/002.gif">
+              <div class="music  m005 trans-late"><img src="images/m005.png" class="scroll-up"> </div>
+              <div class="music  m006 trans-late"><img src="images/m006.png" class="scroll-up"> </div>
+              <div class="music  m007 trans-late"><img src="images/m007.png" class="scroll-up"> </div>
+              <div class="music  m008 trans-late"><img src="images/m008.png" class="scroll-up"> </div>
+         
+              <div class="music  trans-late"><img src="images/m009.png" class="scroll-up"> </div>
+              <div class="music  trans-late"><img src="images/m010.png" class="scroll-up"> </div>
+              <div class="music  trans-late"><img src="images/m011.png" class="scroll-up"> </div>
+              <div class="music  trans-late"><img src="images/m012.png" class="scroll-up"> </div>
+             
+              <div class="music  trans-late"><img src="images/m013.png" class="scroll-up"> </div>
+              <div class="music  trans-late"><img src="images/m014.png" class="scroll-up"> </div>
+              <div class="music  trans-late"><img src="images/m015.png" class="scroll-up"> </div>
+              <div class="music  trans-late"><img src="images/m016.png" class="scroll-up"> </div>
+            </div>
+          <div style="padding-top:3%;"><h2>MOVIE</h2></div>
+          <div class="setumei">
+            <p>今までに作成した映像やCGです</p>
+          </div>
+          
+            <img src="images/001.gif" class="scroll-up"><img src="images/002.gif" class="scroll-up">
 
 
           
@@ -176,7 +184,46 @@
           document.getElementById("m004").currentTime = 0;
           document.getElementById("m004").pause();
         });
+
+        
+        $('.m005').mouseover(function(){
+          document.getElementById("m005").currentTime = 0;
+          document.getElementById("m005").play();
+        });
+        $('.m005').mouseleave(function(){
+          document.getElementById("m005").currentTime = 0;
+          document.getElementById("m005").pause();
+        });
+
+        $('.m006').mouseover(function(){
+          document.getElementById("m006").currentTime = 0;
+          document.getElementById("m006").play();
+        });
+        $('.m006').mouseleave(function(){
+          document.getElementById("m006").currentTime = 0;
+          document.getElementById("m006").pause();
+        });
+
+        $('.m007').mouseover(function(){
+          document.getElementById("m007").currentTime = 0;
+          document.getElementById("m007").play();
+        });
+        $('.m007').mouseleave(function(){
+          document.getElementById("m007").currentTime = 0;
+          document.getElementById("m00").pause();
+        });
+
+        $('.m008').mouseover(function(){
+          document.getElementById("m008").currentTime = 0;
+          document.getElementById("m008").play();
+        });
+        $('.m008').mouseleave(function(){
+          document.getElementById("m008").currentTime = 0;
+          document.getElementById("m008").pause();
+        });
       });
+
+      
     
 
     </script>

@@ -52,13 +52,13 @@ li{
 .main{
   background-color: #cfcfcf;
   height:auto;
-  padding:10px 10px 10px 10px;
+  padding: 2% 3% 3% 3%;
   margin:0;
 }
 
 .main img{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -84,12 +84,20 @@ li{
 
 
 
+.setumei{
+    width: 60%;
+}
+
+.title{
+    padding:0% 0 2% 0;
+}
+
 .h1{
   position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    padding:0;
+    padding:0 5% 0 0;
     margin:0;
     font-size:9rem;
     color: white;
@@ -140,10 +148,16 @@ li{
   html {
     font-size: 71.4286%;
   }
+  .nakami{
+    display:flex;
+}
 }
  
 @media only screen and (min-width:961px) {
   html {
     font-size: 75.8929%;
   }
+  .nakami{
+    display:flex;
+}
 }

@@ -50,9 +50,9 @@ li{
 }
 
 .main{
-  background-color: #cfcfcf;
+  background-color: #e5e9e9;
   height:auto;
-  padding: 2% 3% 3% 3%;
+  padding: 2.3% 3% 3% 4%;
   margin:0;
 }
 
@@ -63,7 +63,7 @@ li{
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto;
+    margin: 0 5% 0 0;
     object-fit: cover;
   }
 

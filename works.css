@@ -188,17 +188,7 @@ li{
   margin: 0 0 2.0rem;
 }
 
-.scroll-up{
-  opacity: 0; 
-  visibility: hidden;
-  transform: translateY(50px);
-  transition: transform .8s;
-}
-.scroll-up.is-show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0px);
-}
+
 
 .trans-late{
   transition: transform .3s;
@@ -311,4 +301,15 @@ background:#eee;}
     padding-top: 100%;
   }
   
+  .scroll-up{
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: transform .8s;
+  }
+  .scroll-up.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
 }

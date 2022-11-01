@@ -132,6 +132,7 @@ li{
 .waku img{
   width: 32%;
   padding-right: 1%;
+  margin-bottom:0.5%;
 }
 .setumei{
   padding-bottom:3%;
@@ -155,6 +156,12 @@ li{
   left: 0;
   margin: auto;
   object-fit: cover;
+}
+
+.quo{
+    display: inline-block;      /* インラインブロック要素にする */
+    background-color:  #ccc;    /* 背景色指定 */
+    padding: 20px;
 }
 
 .hide-area{

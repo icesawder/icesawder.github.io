@@ -35,8 +35,23 @@ a:hover{
 
 li{
   list-style: none;
-  float:right;
+  float: right;
   padding:30px 15px;
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.list{
+  display: flex;
+  margin:auto;
+  text-align: center;
+}
+
+.list li{
+	display: inline-block;
 }
 
 
@@ -145,15 +160,18 @@ li{
   margin: 0 0 2.0rem;
 }
 
+.textzone img{
+  width: 40%;
+  margin-bottom: 50px;
+}
 
-
-@media only screen and (min-width:651px) {
+@media only screen and (min-width:1200px) {
   html {
     font-size: 71.4286%;
   }
 }
  
-@media only screen and (min-width:961px) {
+@media only screen and (min-width:1201px) {
   html {
     font-size: 75.8929%;
   }

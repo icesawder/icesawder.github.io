@@ -18,7 +18,7 @@ body {
 }
 
 
-a{
+.header-list a{
   text-decoration: none;
   padding: 0 4px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(255, 255, 255) 50%);
@@ -29,7 +29,7 @@ a{
 a:visited{
   color :inherit;
 }
-a:hover{
+.header-list a:hover{
   background-position: -100% 0;
   color: rgb(132, 209, 253);
 }
@@ -159,9 +159,15 @@ li{
 }
 
 .quo{
-    display: inline-block;      /* インラインブロック要素にする */
+    display: inline-block;     /* インラインブロック要素にする */
     background-color:  #ccc;    /* 背景色指定 */
-    padding: 20px;
+    padding: 20px ;
+    margin-bottom: 5px;
+}
+
+a:hover{
+  background-position: -100% 0;
+  color: rgb(255, 255, 255);
 }
 
 .hide-area{
@@ -204,7 +210,6 @@ li{
 .trans-late:hover {
   transform: translate(0, -5%);
   box-shadow: 0px 5px 10px rgb(41, 41, 41);
-
   }
 
 

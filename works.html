@@ -82,6 +82,11 @@
       <audio id="m019" preload="auto"><source src="music/m019.mp3" type="audio/mp3"></audio>
       <audio id="m020" preload="auto"><source src="music/m020.mp3" type="audio/mp3"></audio>
 
+      <audio id="q001" preload="auto"><source src="music/q001time.mp3" type="audio/mp3"></audio>
+      <audio id="q002" preload="auto"><source src="music/q002messagefromgalaxyfriend.mp3" type="audio/mp3"></audio>
+      <audio id="q003" preload="auto"><source src="music/q003ring.mp3" type="audio/mp3"></audio>
+      <audio id="q004" preload="auto"><source src="music/q004lifeislossy.mp3" type="audio/mp3"></audio>
+
       <div class="floating-banner">
         <div class="banner">
          
@@ -134,12 +139,13 @@
           <div style="padding-top:3%;"><h2>quarterofaminute</h2></div>
           <div class="setumei">
           <p>15秒間のクリップを作成して投稿するディスコードコミュニティ、quarterofaminuteに参加した作品です。</p>
-          </div>
-          <div class="quo"><p>lifeislossy_221026</p></div>
-          <div class="quo"><p>time_211215</p></div>
-          <div class="quo"><p>messagefromgalaxyfriend_211229</p></div>
-          <div class="quo"><p>ring_220113</p></div>
-
+        </div>
+          <div class="scroll-up">
+            <a href="https://soundcloud.com/quarterofaminute/lifeislossy_221026"><div class="quo q001 trans-late"><p>time_211215</p></div></a>
+          <div class="quo q002 trans-late"><p>messagefromgalaxyfriend_211229</p></div>
+          <div class="quo q003 trans-late"><p>ring_220113</p></div>
+          <div class="quo q004 trans-late"><p>lifeislossy_221026</p></div>
+        </div>
           <div style="padding-top:3%;"><h2>MOVIE</h2></div>
           <div class="setumei">
             <p>今までに作成した映像やCGです</p>
@@ -359,6 +365,43 @@
           document.getElementById("m020").currentTime = 0;
           document.getElementById("m020").pause();
         });
+
+        $('.q001').mouseover(function(){
+          document.getElementById("q001").currentTime = 0;
+          document.getElementById("q001").play();
+        });
+        $('.q001').mouseleave(function(){
+          document.getElementById("q001").currentTime = 0;
+          document.getElementById("q001").pause();
+        });
+
+        $('.q002').mouseover(function(){
+          document.getElementById("q002").currentTime = 0;
+          document.getElementById("q002").play();
+        });
+        $('.q002').mouseleave(function(){
+          document.getElementById("q002").currentTime = 0;
+          document.getElementById("q002").pause();
+        });
+
+        $('.q003').mouseover(function(){
+          document.getElementById("q003").currentTime = 0;
+          document.getElementById("q003").play();
+        });
+        $('.q003').mouseleave(function(){
+          document.getElementById("q003").currentTime = 0;
+          document.getElementById("q003").pause();
+        });
+
+        $('.q004').mouseover(function(){
+          document.getElementById("q004").currentTime = 0;
+          document.getElementById("q004").play();
+        });
+        $('.q004').mouseleave(function(){
+          document.getElementById("q004").currentTime = 0;
+          document.getElementById("q004").pause();
+        });
+
       });
 
       

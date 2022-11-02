@@ -123,6 +123,16 @@ ul{
   position: relative;     
 }
 
+.setumei{
+  display: flex;
+}
+
+.gaiyou{
+  margin-left: 8%;
+  display: block;
+  width: 50%;
+}
+
 .textzone{
   color: rgb(34, 34, 34);
   display: block;
@@ -152,13 +162,14 @@ ul{
   width: 90%;
   padding-left: 5%;
   white-space:pre-wrap;
-  margin: 0 0 2.5rem;
+  margin: 0 0 1.5rem;
 }
 
 .textzone h4{
   font-weight: 200;
   margin: 0 0 2.0rem;
 }
+
 
 .textzone img{
   width: 40%;

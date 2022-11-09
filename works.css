@@ -19,6 +19,7 @@ body {
 
 
 .header-list a{
+  color: #fff;
   text-decoration: none;
   padding: 0 4px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(255, 255, 255) 50%);

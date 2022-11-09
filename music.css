@@ -19,19 +19,20 @@ body {
 
 
 a{
-  text-decoration: none;
+  color : #1f2196;
+  text-decoration: underline;
   padding: 0 4px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(255, 255, 255) 50%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgb(0, 225, 255) 50%);
   background-position: 0 0;
   background-size: 200% auto;
   transition: .3s;
 }
 a:visited{
-  color : #ffffff;
+  color : #1f2196;
 }
 a:hover{
   background-position: -100% 0;
-  color: rgb(132, 209, 253);
+  color: rgb(255, 255, 255);
 }
 
 li{
@@ -40,7 +41,9 @@ li{
 
   padding:30px 15px;
 }
-
+p{
+  margin-bottom: 0.8rem;
+}
 
 .header-logo{
   font-size:36px;
@@ -50,8 +53,8 @@ li{
 }
 
 .main{
-  background-color: #e5e9e9;
-  height:auto;
+  background-color: #f2f8fa;
+  height:850;
   padding: 2.3% 3% 3% 4%;
   margin:0;
 }

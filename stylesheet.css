@@ -17,7 +17,7 @@ body {
   margin: 0px;
 }
 
-a{
+.header a{
   color: #fff;
   text-decoration: none;
   padding: 0 4px;
@@ -126,6 +126,16 @@ p {
    top: 50%;                    /* 親要素の半分下にずらす */
    left: 50%;                   /* 親要素の半分右にずらす */
    transform: translateY(-50%) translateX(-50%);    /* 要素自体の半分、上と左にずらす */
+}
+
+.textzone a{
+  color: rgb(119, 96, 247);
+  text-decoration: underline;
+  padding: 0 4px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgb(255, 255, 255) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .3s;
 }
 
 .textzone h2{

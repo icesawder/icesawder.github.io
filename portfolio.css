@@ -139,7 +139,7 @@ ul{
   display: block;
   margin:  auto auto;
   padding: 25px auto;
-  width:80%;
+  width:78%;
   height: 90%;
   position: absolute;          /* 位置指定 */
    top: 50%;                    /* 親要素の半分下にずらす */
